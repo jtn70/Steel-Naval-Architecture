@@ -1,0 +1,104 @@
+\documentclass[12pt,twoside,a4paper]{book}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{amsmath}
+\usepackage{setspace}
+
+\setmainfont[Ligatures=TeX]{Times New Roman}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[C]{\leftmark}
+
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{#1}}{}}
+
+\titleformat{\part}[display]{\normalfont\bfseries}{}{0pt}{\Huge}
+\titleformat{\chapter}[display]{\normalfont\bfseries}{}{0pt}{\huge}
+\titleformat{\section}[display]{\normalfont\bfseries}{}{0pt}{\LARGE}
+\titleformat{\subsection}[display]{\normalfont\bfseries}{}{0pt}{\Large}
+\titleformat{\subsubsection}[display]{\normalfont\bfseries}{}{0pt}{\large}
+
+\begin{document}	
+\title{Elements and practice of Naval Architecture}
+\author{David Steel}
+\date{1812}
+
+\newgeometry{margin=1cm}
+\begin{titlepage}
+\doublespacing
+\begin{center}
+
+\footnotesize THE
+
+\LARGE ELEMENTS AND PRACTICE
+
+\tiny OF
+
+\Huge \textbf{NAVAL ARCHITECTURE;}
+
+\tiny OR,
+
+\LARGE A Treatise
+
+\tiny ON
+
+\huge \textbf{SHIP-BUILDING,}
+
+\small THEORETICAL AND PRACTICAL,
+
+\large ON THE BEST PRINCIPLES ESTABLISHED IN GREAT BRITAIN.
+
+\rule{4cm}{2pt}
+
+\normalsize WITH COPIOUS TABLES OF DIMENSIONS, \&c.
+
+\small ILLUSTRATED WITH
+
+\large A SERIES OF THIRTY-NINE LARGE DRAUGHTS,
+
+\small AND NUMEROUS SMALLER ENGRAVINGS.
+
+\rule{4cm}{2pt}
+
+\small THE SECOND EDITION,
+
+\footnotesize WITH ADDITIONS;
+
+\tiny INCLUDING 
+
+\large AN ACCURATE DRAUGHT,
+
+\footnotesize CONTAINING THE PLANS, ELEVATIONS, AND SECTIONS.
+
+\tiny OF THE
+
+\singlespacing
+\small NEW METHODS OF FITTING THE STORE-ROOMS, \&c. BETWEEN THE GUN-DECK AND ORLOP OF 
+
+SHIPS OF THE LINE, \&c.
+
+\rule{8cm}{1pt}
+
+\footnotesize LONDON:
+
+\scriptsize PRINTED FOR STEEL AND CO. CHART-SELLERS TO THE ADMIRALITY, AT THEIR
+
+\scriptsize NAVIGATION-WAREHOUSE, 70, CORNHILL.
+
+\rule{3cm}{1pt}
+
+\large 1812.
+	\end{center}
+\end{titlepage}
+\restoregeometry
+
+\part{BOOK THE FIRST. \\
+\footnotesize EXPLAINING THE FIRST ELEMENTARY AND THEORETIC PRINCIPLES}
+\setlength{\parindent}{0pt}
+\include{chapter1}
+
+\end{document}
