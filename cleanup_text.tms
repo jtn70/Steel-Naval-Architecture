@@ -1,0 +1,25 @@
+/*
+function cleanText1(seltext) {
+    seltext = seltext.replace(" ,", ",");
+    seltext = seltext.replace(" .", ".");
+    seltext = seltext.replace(" ( ", ")");
+    seltext = seltext.replace(" ) ", ")");
+    return seltext;
+}
+
+*/
+
+String.prototype.cleanText = function() {
+    return this.replace(" ,", ",");
+};
+
+var txt = TM.selection;
+
+if(seltext != "") {
+    var pos = TM.selectionStart;
+    txt = txt.cleanText();
+    TM.insertText(txt);
+    TM.selectRange(pos, txt.length);
+}
+
+undefined;
